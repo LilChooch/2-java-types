@@ -4,9 +4,9 @@ public class Task03 {
 
     public static int getMetreFromCentimetre(int centimetre) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        int c = centimetre / 100;
 
-        return 0;
+        return c;
     }
 
     public static void main(String[] args) {
