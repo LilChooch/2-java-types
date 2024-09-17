@@ -1,21 +1,45 @@
 package com.example.task05;
 
+import static jdk.nashorn.internal.objects.NativeString.charAt;
+
 public class Task05 {
 
     public static String solution(int x) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+       String s = String.valueOf(x);
+       int cnt = 0;
+       String w ;
+       for(int i = 0 ; i < s.length();i++)
+       {
+           char q = s.charAt(i);
+           int y = Integer.valueOf(q);
+           if(y%2==0)
+           {
+               cnt+=0;
+           }
+           else
+           {
+               cnt = 1;
+           }
 
-        return "FALSE";
+       }
+       if(cnt==0)
+       {
+           w="TRUE";
+       }
+       else
+       {
+           w="FALSE";
+       }
+
+        return w;
     }
 
     public static void main(String[] args) {
-        // Здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
-        // например вот так:
-        /*
+
         String result = solution(1234);
         System.out.println(result);
-        */
+
     }
 
 }
