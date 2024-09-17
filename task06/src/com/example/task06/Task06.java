@@ -4,9 +4,17 @@ public class Task06 {
 
     public static int solution(int x, int y) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        int sum = Math.abs(x+y);
+        String comsum = String.valueOf(sum);
+        int cntsum = 0;
 
-        return 0;
+        for(int i = 0; i < comsum.length(); i++)
+        {
+                cntsum++;
+
+        }
+
+        return cntsum;
     }
 
     public static void main(String[] args) {
