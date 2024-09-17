@@ -4,9 +4,11 @@ public class Task07 {
 
     public static int solution(int n, int m, int k) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        int longe = n/k;
+        int width = m/k;
+        int tent = longe*width;
 
-        return 0;
+        return tent;
     }
 
     public static void main(String[] args) {

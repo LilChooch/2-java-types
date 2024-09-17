@@ -4,7 +4,7 @@ import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
 
-public class Tests {
+public class  Tests {
 
     private void check(int n, int m, int k, int output) {
         Assertions.assertThat(Task07.solution(n, m, k)).as("Input: N=%s, M=%s, K=%s", n, m, k).isEqualTo(output);
