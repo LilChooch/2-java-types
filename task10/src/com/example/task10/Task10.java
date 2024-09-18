@@ -7,7 +7,7 @@ public class Task10 {
         // TODO корректно сравнивать два значения типа float с заданной пользователем точностью (параметр - количество знаков после запятой).
         // Функция должна корректно обрабатывать ситуацию со сравнением значений бесконечности.
         // Функция должна считать значения «не число» NaN (например 0.0/0.0) равными между собой.
-        double srav = 0.000001;
+
         if(Float.isInfinite(a) && Float.isInfinite(a))
         {
             return a == b;
@@ -20,15 +20,9 @@ public class Task10 {
             }
             return true;
         }
-        float rav = (float)Math.pow(7,precision);
-       if (Math.abs(Math.round(a * rav) - Math.round(b * rav)) < srav)
-       {
-           return true;
-       }
-       else
-       {
-           return false;
-       }
+        float rav = (float)Math.pow(10,-precision);
+        return (Math.abs(a-b) < rav);
+
     }
 
     public static void main(String[] args) {
